@@ -40,3 +40,29 @@
   ul li a:hover {
       color: #F9573F;
   }
+
+  .technology{
+    padding: 0.5rem;
+    width: auto;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    background-color: #f09d51;
+    color: #fff;
+}
+ul li {
+    list-style-type: none;
+    line-height: 25px;
+}
+
+.details {
+    color: #4f86e6 ;
+}
+.info {
+  font-weight: bold;
+  font-weight: 1.1rem;
+}
+
+.btn-success {
+    background-color: #F9573F;
+    border: none;
+}

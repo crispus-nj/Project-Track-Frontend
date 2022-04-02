@@ -5,24 +5,25 @@
   </nav>
 <div class="container">
     <h4 class="d-flex justify-content-center">Add Project</h4>
-    <form>
+
+    <form (ngSubmit)="onSubmit()">
         <div class="form-control">
-            <input type="text" class="form-control" id="text" placeholder="Project Name">
+            <input type="text" name="text" [(ngModel)]="text" class="form-control" id="text" placeholder="Project Name">
         </div>
         <div class="form-control">
-            <textarea class="form-control" id="Textarea" rows="3" placeholder="Project Description"></textarea>
+            <textarea class="form-control" name="textarea" id="Textarea" rows="3" placeholder="Project Description" type="text"></textarea>
         </div>
         <div class="form-control">
-            <input type="text" class="form-control" id="members" placeholder="Project Members">
+            <input type="text" class="form-control" name="members" id="members" placeholder="Project Members">
         </div>
         <div class="form-control">
-            <input type="text" class="form-control" id="" placeholder="Project Link">
+            <input type="text" class="form-control" name="link" id="link" placeholder="Project Link">
         </div>
         <div class="mb-3">
-            <input class="form-control" type="file" id="formFile">
+            <input class="form-control" name="file" type="file" id="formFile">
           </div>      
     </form>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-success" type="button">Add Project</button>
+        <button class="btn btn-success" type="Submit">Add Project</button>
       </div>
 </div>

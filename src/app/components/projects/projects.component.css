@@ -1,3 +1,8 @@
+.projects {
+  text-transform: uppercase;
+  color: #F9573F;
+}
+
 .img-container {
   position: relative;
   overflow: hidden;

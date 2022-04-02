@@ -8,25 +8,25 @@
     </div>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 mt-2 d-flex justify-content-start align-items-start">
+            <div class="col-md-4 mt-2 d-flex justify-content-start align-items-start" *ngFor="let project of projects">
                 <div class="img-container">
-                    <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202108/Instagram_0.jpg?ZZLGdE1PjohTO.aeUOUEQYBxAWLPgCGT&size=770:433" alt="product" class="product-img">
+                    <img src="{{project.image}}" alt="product" class="product-img">
                     <button class="bag-btn" data-id="1">
                         <i class="fas fa-shopping-cart"></i>
-                        View Repo
+                        View Project
                     </button>
                 </div>
                 <div class="project-detail">
                     <ul>
-                        <li><span class="info">Owner:</span> <span class="details">Crispus Njenga</span></li>
-                        <li><span class="info">Project Description: </span> <span class="details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum odio nihil consequuntur ratione sapiente fugit, dolorum quia veniam ab aut numquam deleniti exercitationem id voluptatum quod, eum, velit a.</span></li>
-    
-                        <li><span class="info">Technologies: </span> <span class="technology mt-2">Python</span> </li>
+                        <li><span class="info">Project Name: </span> <span class="details">{{project.project_name}}</span></li>
+                        <li><span class="info">Category: </span> <span class="details">{{project.category}}</span></li>
+                        <li><span class="info">Project Description: </span> <span class="details">{{project.description}}</span></li>
+                        <li><span class="info">Technologies: </span> <span class="technology mt-2">{{project.technologies}}</span> </li>
     
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 mt-2 d-flex justify-content-start align-items-start">
+            <!-- <div class="col-md-4 mt-2 d-flex justify-content-start align-items-start">
                 <div class="img-container">
                     <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202108/Instagram_0.jpg?ZZLGdE1PjohTO.aeUOUEQYBxAWLPgCGT&size=770:433" alt="product" class="product-img">
                     <button class="bag-btn" data-id="1">
@@ -79,7 +79,7 @@
     
                     </ul>
                 </div>
-            </div>
+            </div> -->
         </div>
     
 </div>

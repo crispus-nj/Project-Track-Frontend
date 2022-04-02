@@ -1,0 +1,61 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #222;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.bookers {
+  height: 20pc;
+  width: 23pc;
+  position: relative;
+  margin-left: 55pc;
+  margin-top: -35pc;
+}
+.bookers input {
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: #ff4e00;
+}
+.bookers button {
+  display: block;
+  background-color: #f9573f;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: #c0392b;
+}
+.bookers label {
+  color: white;
+}
+
+
+
+#header{
+    color: blue;
+    font-weight: 900;
+    border: 30px;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+#reg{
+    color: blue;
+    font-weight: 900;
+    margin-left: 100px;
+}
+

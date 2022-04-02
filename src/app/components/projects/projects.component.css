@@ -49,3 +49,11 @@ ul li {
     line-height: 25px;
 }
 
+.details {
+    color: #4f86e6 ;
+}
+.info {
+  font-weight: bold;
+  font-weight: 1.1rem;
+}
+

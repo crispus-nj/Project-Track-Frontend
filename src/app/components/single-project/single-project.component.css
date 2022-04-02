@@ -1,0 +1,34 @@
+.product-img {
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    transition: all 0.3s linear;
+  }
+  .projects {
+    text-transform: uppercase;
+    color: #F9573F;
+  }
+  .single {
+      display: flex;
+      justify-content: space-between;
+      /* align-items: center; */
+  }
+  .members-info {
+    display: flex;
+    justify-content: space-between; 
+  }
+  .button {
+      background-color: #f09d51;
+      padding: 5px;
+      color: #F9573F;
+      border-radius: 20px;
+      color: #fff ;
+      border: none; 
+      /* position: relative;
+      top: -70; */
+  }
+  .button:hover {
+    background-color: #fff;
+    color: #F9573F;
+    text-transform: uppercase;
+  }

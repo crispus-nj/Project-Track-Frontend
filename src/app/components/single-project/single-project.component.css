@@ -24,11 +24,19 @@
       border-radius: 20px;
       color: #fff ;
       border: none; 
-      /* position: relative;
-      top: -70; */
   }
   .button:hover {
     background-color: #fff;
     color: #F9573F;
     text-transform: uppercase;
+  }
+  ul li {
+    list-style-type: none;
+
+  }
+  ul li a {
+      text-decoration: none;
+  }
+  ul li a:hover {
+      color: #F9573F;
   }

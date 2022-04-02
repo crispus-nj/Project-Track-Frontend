@@ -13,4 +13,11 @@
 button{
     background-color: #F9573F;
     outline:#F9573F;
+    width: auto;
+}
+
+.parent{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }

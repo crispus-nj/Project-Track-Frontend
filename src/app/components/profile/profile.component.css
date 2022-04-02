@@ -4,6 +4,11 @@
     justify-content: center;
     display: flex;
 }
+.pro img:hover{
+    background-color: grey;
+    height: 200px;
+    width: 250px;
+}
 .d-flex{
     padding: 5px;
 }
@@ -29,4 +34,7 @@
 }
 .navbar{
     background-color: grey;
+}
+.card-link.card:hover{
+    text-decoration: white;
 }

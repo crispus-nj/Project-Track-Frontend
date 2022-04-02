@@ -42,9 +42,9 @@
     <div class="row mb-5">
         <div class="col-md-8" style="max-width: 700px;margin:auto">
             <p class="text-muted">no comments</p>
-            <form>
-                <textarea name="comment" id="comment" class="form-control" placeholder="Leave a Comment..." cols="30" rows="3"></textarea>
-                <button class="btn btn-success mt-2">Send</button>
+            <form (ngSubmit)="sendComment()" #form="ngForm">
+                <textarea name="comment" id="comment" class="form-control" placeholder="Leave a Comment..." cols="30" rows="3" ngModel required></textarea>
+                <button type="submit" [disabled]="form.invalid" class="btn btn-success mt-2">Send</button>
             </form>
         </div>
     </div>

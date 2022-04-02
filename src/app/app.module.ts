@@ -12,6 +12,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SingleProjectComponent } from './components/single-project/single-proje
     ProfileComponent,
     EditProfileComponent,
     AddProjectComponent,
-    SingleProjectComponent
+    SingleProjectComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

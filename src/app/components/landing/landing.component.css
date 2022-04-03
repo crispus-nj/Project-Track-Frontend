@@ -10,13 +10,8 @@
     padding: 5%;
 }
 
-/* button{
-    background-color: #F9573F;
-    outline:#F9573F;
-    width: auto;
-} */
-
 button {
+    display: block;
     padding: 1.3em 3em;
     font-size: 12px;
     text-transform: uppercase;
@@ -43,8 +38,8 @@ button {
     transform: translateY(-1px);
    }
 
-.parent{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+   .android{
+    margin: 20px;
+    padding: 20px;
+   }
+

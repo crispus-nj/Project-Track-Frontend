@@ -6,8 +6,7 @@
 }
 .pro img:hover{
     background-color: grey;
-    height: 200px;
-    width: 250px;
+
 }
 .d-flex{
     padding: 5px;
@@ -19,7 +18,7 @@
 }
 
 .card:hover{
-    background-color: blue;
+    background-color: rgb(2, 2, 44);
 }
 
 .follow{

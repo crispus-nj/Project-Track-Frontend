@@ -71,5 +71,10 @@
     bottom: -2%;
     justify-content: center;
   }
+
+  img{
+    position: relative;
+    left: 2em;
+  }
   
 

@@ -1,15 +1,45 @@
 .container{
     max-width: 50%;
-    background-color: rgb(19, 113, 153);
     border-radius: 10px;
     margin-top: 10px;
-    
+    background-image: url("images/projecttracker.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
 }
 
 .navbar{
-    background-color: grey;
+    background-color: rgb(3, 3, 43);
 }
 
 .d-grid{
     padding-bottom: 15px;
+}
+.btn{
+    background-color: orange;
+}
+
+.form-control{
+    margin-top: 20px;
+    margin-right: 20px;
+    background: transparent;
+    
+}
+
+#link{
+    background-color: white;
+}
+#members{
+    background-color: white;
+}
+#Textarea{
+    background-color: white;
+}
+#text{
+    background-color: white;
+}
+
+#formFile{
+    background-color: white;
+    margin-bottom: 20px;
 }

@@ -38,3 +38,7 @@
 .card-link.card:hover{
     text-decoration: white;
 }
+button{
+    background-color: orange;
+    margin: 10px;
+}

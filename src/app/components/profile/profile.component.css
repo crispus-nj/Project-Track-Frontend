@@ -33,8 +33,12 @@
     flex-direction: column-reverse;
 }
 .navbar{
-    background-color: grey;
+    background-color: rgb(2, 2, 44);
 }
 .card-link.card:hover{
     text-decoration: white;
+}
+button{
+    margin: 20px;
+    background-color: orange;
 }

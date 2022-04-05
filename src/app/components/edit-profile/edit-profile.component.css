@@ -4,8 +4,6 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #222;
-  padding-bottom: 50px;
   overflow: hidden;
 }
 
@@ -55,6 +53,7 @@ body {
   color: blue;
   font-weight: 900;
   margin-left: 40px;
+  margin-top: 80px;
 }
 
 .insameline {

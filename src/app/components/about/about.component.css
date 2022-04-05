@@ -15,7 +15,7 @@ body, html {
   }
   .bg-image {
     /* The image used */
-    background-image: url("../../../assets/images/about.jpg");
+    background-image: url("/src/assets/images/about.jpg");
   
     /* Add the blur effect */
     filter: blur(4px);
@@ -32,13 +32,13 @@ body, html {
   
   /* Position text in the middle of the page/image */
   .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(30,53,87,0.4); /* Black w/opacity/see-through */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(30,53,87,0.4); 
     color: white;
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
@@ -109,22 +109,5 @@ footer{
     .footer-menu ul{
       display: flex;
       margin-top: 5px;
-      margin-bottom: 2px;
     }
-}
-.footer-bottom p{
-  float: left;
-  font-size: 14px;
-  word-spacing: 2px;
-  text-transform: capitalize;
-}
-.footer-bottom p a{
- color:#44bae8;
- font-size: 16px;
- text-decoration: none;
-}
-.footer-bottom span{
-   text-transform: uppercase;
-   opacity: .4;
-   font-weight: 200;
 }

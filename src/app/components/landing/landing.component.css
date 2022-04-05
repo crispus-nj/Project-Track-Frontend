@@ -1,7 +1,7 @@
   .sidebar{
     background-color:#E1E1E1;
     height: 100%;
-    width: 30%;
+    width: 35vw;
     position: fixed;
     z-index: 1;
     top: 55px;
@@ -42,7 +42,7 @@
     margin: 20px;
     float: left;
     padding: 10px;
-    width:33.33%;
+    width:30vw;
     position: relative;
     left: 40%;
     top: -10%;
@@ -52,7 +52,7 @@
     margin: 20px;
     float: left;
     padding: 10px;
-    width:33.33%;
+    width: 30vw;
     position: relative;
     left: 40%;
   }

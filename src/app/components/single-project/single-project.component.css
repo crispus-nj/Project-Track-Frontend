@@ -26,8 +26,8 @@
       border: none; 
   }
   .button:hover {
-    background-color: #fff;
-    color: #F9573F;
+    background-color: rgb(128, 115, 115);
+    color: #fff;
     text-transform: uppercase;
   }
   ul li {

@@ -14,6 +14,8 @@ import { AddProjectComponent } from './components/add-project/add-project.compon
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { FormsModule } from '@angular/forms';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,

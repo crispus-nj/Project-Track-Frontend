@@ -2,7 +2,11 @@
   text-transform: uppercase;
   color: #F9573F;
 }
-
+.card-items {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 12px;
+  background-color: #dfac7c;
+}
 .img-container {
   position: relative;
   overflow: hidden;
@@ -24,17 +28,17 @@
 .bag-btn:hover {
   color: #fff;
 }
-.fa-shopping-cart {
-  margin-right: 0.5rem;
-}
+
 .img-container:hover .bag-btn {
   transform: translateX(0);
 }
+
 .product-img {
   display: block;
   width: 100%;
-  min-height: 12rem;
+  height: 12rem;
   transition: all 0.3s linear;
+  padding: 0.5rem;
 }
 
 .img-container:hover .product-img {
@@ -61,4 +65,6 @@ ul li {
   font-weight: bold;
   font-weight: 1.1rem;
 }
+
+
 

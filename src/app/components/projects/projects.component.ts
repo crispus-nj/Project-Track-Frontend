@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Router } from '@angular/router';
 import { Project } from './projects.model';
 @Component({
   selector: 'app-projects',
@@ -44,9 +45,33 @@ export class ProjectsComponent implements OnInit {
       image: "https://techcrunch.com/wp-content/uploads/2019/09/twitter-hidden-replies1.png?w=730"
     },
   ]
-  constructor() { }
+
+  showChild = false
+  @Output() project_data = new EventEmitter<Project>()
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  projectDetail(index: number){
+    // this.project_data.emit({
+    //   image: this.projects[index].image,
+    //   owner: this.projects[index].owner,
+    //   project_name: this.projects[index].project_name,
+    //   description: this.projects[index].description,
+    //   repo_link: this.projects[index].repo_link,
+    //   technologies: this.projects[index].owner,
+    //   category: this.projects[index].category,
+    // })
+    this.router.navigate(['/projects', index], {queryParams: {
+      project: this.projects[index].project_name,
+      owner: this.projects[index].owner,
+      description: this.projects[index].description,
+      repo_link: this.projects[index].repo_link,
+      technologies: this.projects[index].technologies,
+      category: this.projects[index].category,
+      image: this.projects[index].image,
+
+    }})
+  }
 }

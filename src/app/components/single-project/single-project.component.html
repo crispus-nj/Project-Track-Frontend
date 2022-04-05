@@ -2,7 +2,7 @@
     <div class="row single" style="max-width: 1000px;margin:auto">
         <div class="col-md-4 mb-5">
             <div class="img-container">
-                <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202108/Instagram_0.jpg?ZZLGdE1PjohTO.aeUOUEQYBxAWLPgCGT&size=770:433"
+                <img src="{{project.image}}"
                     alt="product" class="product-img">
             </div>
         </div>
@@ -27,15 +27,13 @@
             <h4 class="projects text-center">About Project</h4>
             <hr>
             <ul>
-                <li><span class="info">Project Name:</span> <span class="details">Instagram Clone</span></li>
-                <li><span class="info">Owner:</span> <span class="details">Crispus Njenga</span></li>
-                <li><span class="info">Category:</span> <span class="details">Android</span></li>
-                <li><span class="info">Project Description: </span> <span class="details">Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit. Maxime illum odio nihil consequuntur ratione sapiente fugit,
-                        dolorum quia veniam ab aut numquam deleniti exercitationem id voluptatum quod, eum, velit
-                        a.</span></li>
+                <li><span class="info">Project Name:</span> <span class="details"> {{project.project_name}}</span></li>
+                <li><span class="info">Owner:</span> <span class="details"> {{project.owner}}</span></li>
+                <li><span class="info">Category:</span> <span class="details"> {{project.category}}</span></li>
+                <li><span class="info">View Repo:</span> <span class="details"> {{project.repo_link}}</span></li>
+                <li><span class="info">Project Description: </span> <span class="details"> {{project.description}}</span></li>
 
-                <li><span class="info">Technologies: </span> <span class="technology mt-2">Python</span> </li>
+                <li><span class="info">Technologies: </span> <span class="technology mt-2"> {{project.technologies}}</span> </li>
             </ul>
         </div>
     </div>

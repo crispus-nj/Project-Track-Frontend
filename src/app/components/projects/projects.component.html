@@ -6,25 +6,49 @@
         </div>
     </div>
     </div>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
-            <div class="col-md-4 mt-2 d-flex justify-content-start align-items-start" *ngFor="let project of projects; let i = index">
-                <div class="img-container">
+            
+            <div class="col-md-3 mt-2 d-flex justify-content-start align-items-start" *ngFor="let project of projects; let i = index">
+
+                <div class="card shadow card-items mt-2">
+                    <div class="img-container">
+                        <img src="{{project.image}}" class="card-img-top" alt="..." class="product-img">
+                        <button class="bag-btn"  (click)="projectDetail(i)">
+                            <i class="fas fa-shopping-cart"></i>
+                            View Project
+                        </button>
+                    </div>
+                    
+                    <div class="card-body">
+                        <div class="card">
+                            <div class="card-header">
+                                <span class="info">Category: </span> <span class="details">{{project.category}}</span>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                              <li class="list-group-item"><span class="info">Project Name: </span> <span class="details">{{project.project_name}}</span></li>
+                              <li class="list-group-item"><span class="info">Project Description: </span> <span class="details">{{project.description}}</span></li>
+                              <li class="list-group-item"><span class="info">Technologies: </span> <span class="technology mt-2">{{project.technologies}}</span> </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </div>
+
+                <!-- <div class="img-container">
                     <img src="{{project.image}}" alt="product" class="product-img">
-                    <button class="bag-btn" data-id="1">
+                    <button class="bag-btn"  (click)="projectDetail(i)">
                         <i class="fas fa-shopping-cart"></i>
                         View Project
                     </button>
-                </div>
-                <div class="project-detail">
+                </div> -->
+                <!-- <div class="project-detail">
                     <ul>
                         <li><span class="info">Project Name: </span> <span class="details">{{project.project_name}}</span></li>
                         <li><span class="info">Category: </span> <span class="details">{{project.category}}</span></li>
                         <li><span class="info">Project Description: </span> <span class="details">{{project.description}}</span></li>
                         <li><span class="info">Technologies: </span> <span class="technology mt-2">{{project.technologies}}</span> </li>
-    
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     

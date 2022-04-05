@@ -1,8 +1,11 @@
+/* .container-fluid {
+  background-color: #F1f5f8;
+  margin-top: -10re;
+} */
 .product-img {
     display: block;
     width: 100%;
     min-height: 12rem;
-    transition: all 0.3s linear;
   }
   .projects {
     text-transform: uppercase;

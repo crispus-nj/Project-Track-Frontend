@@ -14,7 +14,6 @@ export class SingleProjectComponent implements OnInit {
   constructor( private route : ActivatedRoute) { }
 
   ngOnInit(): void {
-    // this.project.image
     this.route.queryParams.subscribe(res=> {
       this.project = {
         category: res['category'],

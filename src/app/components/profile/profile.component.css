@@ -4,10 +4,7 @@
     justify-content: center;
     display: flex;
 }
-.pro img:hover{
-    background-color: grey;
 
-}
 .d-flex{
     padding: 5px;
 }
@@ -15,10 +12,6 @@
 .projects{
     display: flex;
     justify-content: space-between;
-}
-
-.card:hover{
-    background-color: rgb(2, 2, 44);
 }
 
 .follow{
@@ -39,11 +32,11 @@
 }
 button{
     margin: 20px;
-    background-color: orange;
+    background-color: #020000;
 }
 
 button:hover{
-    background-color: rgb(2, 2, 44);
+    background-color: rgb(9, 9, 77);
     
     
 }

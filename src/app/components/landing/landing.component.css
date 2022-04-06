@@ -58,10 +58,21 @@
 
   img{
     position: relative;
-    left: 2em;
+    left: 1em;
+  }
+
+  .track{
+    position: relative;
+    left: 22em;
+  }
+
+  .choose{
+    position: relative;
+    top: 30px;
   }
   
   ul li{
     list-style-type: none;
     margin-top: 1rem;
   }
+

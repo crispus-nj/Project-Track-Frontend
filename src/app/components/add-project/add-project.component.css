@@ -1,10 +1,14 @@
+body{
+    background-image: url("images/projecttracker.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 .container{
     max-width: 50%;
     border-radius: 10px;
     margin-top: 10px;
-    background-image: url("images/projecttracker.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     padding: 20px;
 }
 
@@ -16,7 +20,7 @@
     padding-bottom: 15px;
 }
 .btn{
-    background-color: orange;
+    background-color: #F9573F;
 }
 
 .form-control{
@@ -42,4 +46,7 @@
 #formFile{
     background-color: white;
     margin-bottom: 20px;
+}
+.ng-model .ng-touch{
+    color: red;
 }

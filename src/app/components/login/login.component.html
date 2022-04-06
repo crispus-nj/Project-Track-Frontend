@@ -13,14 +13,31 @@
 
 <div class="bookers">
     <h3 id="reg">Please Login</h3>
-    <input type="text" placeholder="Email">
-    <input type="text" placeholder="Password">
+    <form #loginForm="ngForm" novalidate (ngSubmit)="onLogin()">
+
+
+        <input type="email" placeholder="Email" required #email="ngModel" [class.is-invalid]="email.invalid && email.touched"
+        class="form-control"   name="email" ngModel email>
+        <small class="text-danger" [class.d-none] =" email.valid || email.untouched">Email is required in email format</small>
+       
+    
+        <input type="password" placeholder="Password" required #password="ngModel" [class.is-invalid]="password.invalid && password.touched"
+        class="form-control" name="password" ngModel>
+        <small class="text-danger" [class.d-none] ="password.valid || password.untouched">Password is Required</small>
+    
+
+
+
 
     <div class="already">
         <a routerLink="/register">Don't' have an account please register</a>
     </div>
 
-    <a href="#"><button type="button">Login</button></a>
+    <button [disabled]="loginForm.form.invalid" type="submit">Login</button>
+
+
+
+</form>
 </div>
 </section>
 

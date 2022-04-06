@@ -35,7 +35,7 @@ body {
   font-size: 16px;
   border-radius: 12px;
   box-shadow: #c0392b;
-  margin-left: 3.2pc;
+  margin-left: 0.1pc;
 }
 .bookers label {
   color: white;
@@ -63,10 +63,74 @@ body {
 
 .insameline-1 {
   float: right;
-  margin-top: -7px;
+  margin-top: -5px;
 }
 
 #myFile {
   font-size: 16px;
   margin-left: 3.2pc;
+}
+
+
+
+
+
+
+
+
+.content h2 {
+  text-align: center;
+  margin-top: 20pc;
+}
+
+.content h1 {
+  font-size: 150%;
+  margin: 20px 0;
+  color: #ff4e00;
+  text-align: center;
+}
+
+.testimonials-1 {
+  width: 533px;
+  height: 316px;
+  top: 156px;
+  max-width: 1200px;
+  background-color: #f9e531ab;
+  border-radius: 3pc;
+}
+
+.testimonials-2 {
+  width: 533px;
+  height: 316px;
+  top: 156px;
+  max-width: 1200px;
+  background-color: #f9e531ab;
+  border-radius: 3pc;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5pc;
+}
+
+.testimonials p {
+  text-align: center;
+  margin: 3pc;
+
+}
+
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 10px;
+  margin-left: 1pc;
+}
+
+
+.upload{
+width: 18.5pc;
 }

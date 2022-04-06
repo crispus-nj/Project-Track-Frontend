@@ -1,13 +1,7 @@
 
-
 .pro{
     justify-content: center;
     display: flex;
-}
-.pro img:hover{
-    background-color: grey;
-    height: 200px;
-    width: 250px;
 }
 .d-flex{
     padding: 5px;
@@ -18,9 +12,7 @@
     justify-content: space-between;
 }
 
-.card:hover{
-    background-color: blue;
-}
+
 
 .follow{
     display: flex;
@@ -33,12 +25,18 @@
     flex-direction: column-reverse;
 }
 .navbar{
-    background-color: rgb(3, 3, 43);
+    background-color: rgb(2, 2, 44);
 }
 .card-link.card:hover{
     text-decoration: white;
 }
 button{
-    background-color: #F9573F;
-    margin: 10px;
+    margin: 20px;
+    background-color: rgb(2, 2, 44);
+}
+
+button:hover{
+    background-color: rgb(20, 20, 209);
+    
+    
 }

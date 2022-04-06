@@ -7,7 +7,7 @@
     <h4 class="d-flex justify-content-center">Add Project</h4>
 
     <form (ngSubmit)="onSubmit()">
-            <input type="text" name="text" [(ngModel)]="text" class="form-control" id="text" placeholder="Project Name" ngModel required #form="form">
+            <input type="text" name="text" [(ngModel)]="text" class="form-control" id="text" placeholder="Project Name" ngModel required>
             <textarea class="form-control" name="textarea" id="Textarea" rows="3" placeholder="Project Description" type="text" ngModel required></textarea>
             <input type="text" class="form-control" name="members" id="members" placeholder="Project Members" ngModel required>
             <input type="text" class="form-control" name="link" id="link" placeholder="Project Link" ngModel required>

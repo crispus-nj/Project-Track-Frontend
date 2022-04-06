@@ -56,9 +56,14 @@
     
   } */
 
-  img{
+  .img{
     position: relative;
-    left: 1em;
+    left: 2em;
+  }
+
+  .img1{
+    position: relative;
+    right: 3em;
   }
 
   .track{
@@ -66,9 +71,17 @@
     left: 22em;
   }
 
+  .track1{
+    position: relative;
+    left: 18em;
+  }
+
   .choose{
     position: relative;
     top: 30px;
+    left: 10px;
+    margin-bottom: 15rem;
+    bottom: 30rem;
   }
   
   ul li{
@@ -76,3 +89,8 @@
     margin-top: 1rem;
   }
 
+  .image{
+    overflow: hidden;
+  }
+
+  

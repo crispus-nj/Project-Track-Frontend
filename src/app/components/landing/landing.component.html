@@ -10,17 +10,24 @@
   
 </head>
 <body>
-  <div class="container">
+  <div class="container-fluid">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #101F3C; font-family: 'Quicksand', sans-serif;">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" style="color: #F9573F; font-weight: 900;">Project Tracker Dashboard</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <span class="navbar-text" style="color: #F9573F; font-weight: 600;">
-          Logout 
-          <i class="fa-solid fa-right-from-bracket"></i>
-        </span>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: #F9573F; font-weight: 600;"> 
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #F9573F; font-weight: 600;">
+              Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color: #F9573F; font-weight: 600;"> 
+              Logout <span><i class="fa-solid fa-right-from-bracket"></i></span></a>
+          </li>
+        </ul>
       </div>
     </nav>
   
@@ -70,24 +77,27 @@
     <div class="web">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-6">
-            <img src="../../../assets/images/web.png" class="rounded float-end" alt="..." width="300px" height="350px" 
-            style="position: relative; left: 20px;"> 
-            <br>
-            <br>
-            <button class="btn-light btn-lg btns" type="submit" style="background-color: #0F1E3A; color: aliceblue;">
-              Web Development</button>
+          <div class="col-6" style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="image">
+              <img src="../../../assets/images/web.png" class="rounded float-end" alt="..." width="300px" height="350px"> 
+            </div>
+            <div class="button">
+              <button class="btn-light btn-lg btns" type="submit" style="background-color: #0F1E3A; color: aliceblue;">
+                Web Development</button>
+            </div>
           </div>      
         </div>
       </div>
-    </div>
+    </div>  
+  </div>
+
+  <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="column">
-        <button class="btn-light btn-lg buttn" type="submit" style="background-color: #F9573F; color: aliceblue;">
+      <div class="col-md-12">
+        <button class="btn btn-block btn-light btn-lg buttn" type="submit" style="background-color: #F9573F; color: aliceblue;">
           Choose Track to View and Contribute to Projects</button>
       </div>
     </div>
   </div>
-  
 </body>
 </html>

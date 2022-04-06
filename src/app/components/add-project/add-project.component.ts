@@ -1,5 +1,6 @@
 import { OpaqueValue } from '@angular/compiler/src/compiler_facade_interface';
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-add-project',
@@ -10,17 +11,18 @@ export class AddProjectComponent implements OnInit {
   text!: string;
   file!: OpaqueValue;
 
+description:string = ''
+@ViewChild('form') addproject: NgForm
 
   constructor() { }
+
 
   ngOnInit(): void {
   }
 
   onSubmit(){
-    if(!this.text){
-      alert('Please add project!!');
-      return;
-    }
+    console.log(this.addproject.value.name, this.addproject.value.member, this.addproject.value.link, this.addproject.value.file)
+    this.addproject.reset()
   }
 
 

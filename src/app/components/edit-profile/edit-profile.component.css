@@ -52,13 +52,13 @@ body {
 #reg {
   color: blue;
   font-weight: 900;
-  margin-left: 40px;
+  margin-left: -3pc;
   margin-top: 80px;
 }
 
 .insameline {
   display: inline-block;
-  margin-left: -9pc;
+  margin-left: -17pc;
 }
 
 .insameline-1 {

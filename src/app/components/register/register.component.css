@@ -36,6 +36,9 @@ body {
   font-size: 16px;
   border-radius: 12px;
   box-shadow: #c0392b;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight:bold;
 }
 .bookers label {
   color: white;
@@ -54,5 +57,12 @@ body {
     color: blue;
     font-weight: 900;
     margin-left: 100px;
+}
+
+.already{
+  color: blue;
+  margin: 1pc;
+  font-weight: 900;
+  text-decoration: none;
 }
 

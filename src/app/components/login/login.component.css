@@ -57,3 +57,9 @@ body {
     margin-left: 100px;
 }
 
+.already{
+  color: blue;
+  margin: 1pc;
+  font-weight: 900;
+  text-decoration: none;
+}

@@ -9,7 +9,12 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
-import { FormsModule } from '@angular/forms';
+// <<<<<<< navbar
+// import { AboutComponent } from './components/about/about.component';
+
+// =======
+// import { FormsModule } from '@angular/forms';
+// >>>>>>> development
 
 @NgModule({
   declarations: [
@@ -22,6 +27,10 @@ import { FormsModule } from '@angular/forms';
     EditProfileComponent,
     AddProjectComponent,
     SingleProjectComponent,
+// <<<<<<< navbar
+//     AboutComponent,
+// =======
+// >>>>>>> development
   ],
   imports: [
     BrowserModule,

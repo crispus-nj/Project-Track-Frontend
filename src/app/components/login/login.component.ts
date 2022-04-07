@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 @ViewChild('loginForm') signin : NgForm;
-loginModel = new Login('trevin@gmail.com', 'password')
+// loginModel = new Login('trevin@gmail.com', 'password')
 
   constructor() { }
 

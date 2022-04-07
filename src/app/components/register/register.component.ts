@@ -8,6 +8,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  
 @ViewChild('registerForm') signup : NgForm;
 registerModel = new Register('trevin', 'trevin@gmail.com', 'trevin', 'trevin');
 

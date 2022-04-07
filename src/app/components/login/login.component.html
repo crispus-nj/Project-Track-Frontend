@@ -24,10 +24,6 @@
         <input type="password" placeholder="Password" required #password="ngModel" [class.is-invalid]="password.invalid && password.touched"
         class="form-control" name="password" ngModel>
         <small class="text-danger" [class.d-none] ="password.valid || password.untouched">Password is Required</small>
-    
-
-
-
 
     <div class="already">
         <a routerLink="/register">Don't' have an account please register</a>

@@ -1,1 +1,55 @@
-<p>register works!</p>
+<section class="first">
+    <section class="content" >
+        <h2 id="header">Moringa School Project Tracker</h2>
+    </section>
+    
+
+    <div class="frontimg">
+        <img src="../../../assets/auth-images/front.jpg" alt="front img" height="600px" width="650px">
+    </div>
+
+
+<div class="bookers">
+    <h3 id="reg">Please Register</h3>
+
+    <form #registerForm="ngForm" novalidate (ngSubmit)="onSubmit()" >
+       
+
+    <input type="text" placeholder="Username" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched" 
+    class="form-control"   name="username" ngModel>
+    <small class="text-danger" [class.d-none] =" name.valid || name.untouched">Username is required</small>
+
+
+
+    <input type="email" placeholder="Email" required #email="ngModel" [class.is-invalid]="email.invalid && email.touched"
+    class="form-control"   name="email" ngModel email>
+    <small class="text-danger" [class.d-none] =" email.valid || email.untouched">Email is required in email format</small>
+   
+
+    <input type="password" placeholder="Password" required #password="ngModel" [class.is-invalid]="password.invalid && password.touched"
+    class="form-control" name="password" ngModel>
+    <small class="text-danger" [class.d-none] =" password.valid || password.untouched">Password is required not less than 8 characters</small>
+
+
+
+    <input type="password" placeholder="Confirm Password" required #confirmPassword="ngModel" [class.is-invalid]="confirmPassword.invalid && confirmPassword.touched"
+    class="form-control" name="confirmPassword" ngModel>
+    <small class="text-danger" [class.d-none] =" confirmPassword.valid || confirmPassword.untouched">Field required</small>
+
+
+
+
+<button [disabled]="registerForm.form.invalid && confirmPassword != password" type="submit">Register</button>
+
+
+</form>
+
+
+
+<div class="already">
+    <a routerLink="/register">Already have an account please login</a>
+</div>
+</div>
+
+
+</section>

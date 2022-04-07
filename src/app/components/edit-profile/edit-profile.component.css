@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  overflow: hidden;
+}
+
+.bookers {
+  height: 20pc;
+  width: 23pc;
+  position: relative;
+  margin-left: 55pc;
+  margin-top: -35pc;
+}
+.bookers input {
+  display: block;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: #ff4e00;
+}
+.bookers button {
+  display: block;
+  background-color: #f9573f;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 12px;
+  box-shadow: #c0392b;
+  margin-left: 0.1pc;
+}
+.bookers label {
+  color: white;
+}
+
+#header {
+  color: blue;
+  font-weight: 900;
+  border: 30px;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+#reg {
+  color: blue;
+  font-weight: 900;
+  margin-left: -3pc;
+  margin-top: 80px;
+}
+
+.insameline {
+  display: inline-block;
+  margin-left: -17pc;
+}
+
+.insameline-1 {
+  float: right;
+  margin-top: -5px;
+}
+
+#myFile {
+  font-size: 16px;
+  margin-left: 3.2pc;
+}
+
+
+
+
+
+
+
+
+.content h2 {
+  text-align: center;
+  margin-top: 20pc;
+}
+
+.content h1 {
+  font-size: 150%;
+  margin: 20px 0;
+  color: #ff4e00;
+  text-align: center;
+}
+
+.testimonials-1 {
+  width: 533px;
+  height: 316px;
+  top: 156px;
+  max-width: 1200px;
+  background-color: #f9e531ab;
+  border-radius: 3pc;
+}
+
+.testimonials-2 {
+  width: 533px;
+  height: 316px;
+  top: 156px;
+  max-width: 1200px;
+  background-color: #f9e531ab;
+  border-radius: 3pc;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5pc;
+}
+
+.testimonials p {
+  text-align: center;
+  margin: 3pc;
+
+}
+
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin: 10px;
+  margin-left: 1pc;
+}
+
+
+.upload{
+width: 18.5pc;
+}

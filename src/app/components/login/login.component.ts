@@ -1,5 +1,4 @@
 import { Component,ViewChild, OnInit } from '@angular/core';
-import { Login } from 'src/app/login';
 import { NgForm } from '@angular/forms';
 
 @Component({

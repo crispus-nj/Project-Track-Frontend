@@ -1,18 +1,18 @@
   .sidebar{
     background-color:#E1E1E1;
     height: 100%;
-    width: 30%;
+    width: 25%;
     position: fixed;
     z-index: 1;
     top: 55px;
     left: 0;
     overflow-x: hidden;
-    padding: 5%;
+    padding: 3rem 1.3rem;
   }
 
-  button {
+  button{
     display: block;
-    padding: 1.3em 3em;
+    padding: 1.3rem 4rem;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -25,6 +25,8 @@
     transition: all 0.3s ease 0s;
     cursor: pointer;
     outline: none;
+    position: relative;
+    left: 10px;
   }
    
   button:hover {
@@ -38,43 +40,57 @@
     transform: translateY(-1px);
   }
 
-  .android{
-    margin: 20px;
-    float: left;
-    padding: 10px;
-    width: 30vw;
-    position: relative;
-    left: 40%;
-    top: -10%;
-  }
-
-  .web{
-    margin: 20px;
-    float: left;
-    padding: 10px;
-    width: 30vw;
-    position: relative;
-    left: 40%;
-  }
 
   .buttn{
     position: relative;
-    bottom: -350%;
-    top: 42em;
     align-items: center;
-    left: -10em;
+    left: 32rem;
     height: 100%;
   } 
 
-  .btns{
+  /* .btns{
     position: relative;
     bottom: -2%;
     justify-content: center;
-  }
+    
+  } */
 
-  img{
+  .img{
     position: relative;
     left: 2em;
+    
+  }
+
+  .img1{
+    position: relative;
+    right: 3em;
+  }
+
+  .track{
+    position: relative;
+    left: 22em;
+  }
+
+  .track1{
+    position: relative;
+    left: 18em;
+  }
+
+  .choose{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    margin-bottom: 15rem;
+    bottom: 30rem;
   }
   
+  ul li{
+    list-style-type: none;
+    margin-top: 1rem;
+  }
 
+  .image{
+    overflow: hidden;
+  }
+
+  

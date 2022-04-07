@@ -1,0 +1,10 @@
+.nav > li > a:hover{
+    color: #fff !important; 
+    font-weight: bolder !important;
+    font-size: 1.2rem;
+}
+.navbar-brand:hover {
+    color: #fff !important; 
+    font-weight: bolder !important;
+    font-size: 1.2rem;
+}

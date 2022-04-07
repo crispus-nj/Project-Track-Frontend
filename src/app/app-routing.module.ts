@@ -7,20 +7,19 @@ import { RegisterComponent } from './components/register/register.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
+import { AboutComponent } from './components/about/about.component';
 
 const routes: Routes = [
-  {path: 'home', component: LandingComponent},
+  {path: '', component: LandingComponent},
+  {path: "about", component: AboutComponent},
   {path: "projects", component: ProjectsComponent},
+  {path: "add-project", component: AddProjectComponent},
+  {path: "profile", component: ProfileComponent},
+  {path: "edit-profile", component: EditProfileComponent},
   {path: "projects/:id", component: SingleProjectComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
-  {
-    path: 'profile',
-    component: ProfileComponent
-   },
-   {
-    path: 'add-project', component: AddProjectComponent
-  },
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile',
@@ -38,6 +39,7 @@ export class ProfileComponent implements OnInit {
    // private fb : FormBuilder,
     //private acc: AccountService, //Methods updating the user profile
     //private toastr: ToastrService, //notifications to the user
+    private route: Router
   ) { }
 
   ngOnInit(): void {}
@@ -68,4 +70,7 @@ export class ProfileComponent implements OnInit {
 
   }*/
 
+  profile() {
+    this.route.navigate(['edit-profile'])
+  }
 }

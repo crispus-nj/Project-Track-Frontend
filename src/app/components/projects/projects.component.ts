@@ -1,6 +1,7 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Project } from './projects.model';
+import { HttpServiceService } from '../../services/http-service.service';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -47,22 +48,15 @@ export class ProjectsComponent implements OnInit {
   ]
 
   showChild = false
-  @Output() project_data = new EventEmitter<Project>()
-  constructor(private router: Router) { }
+
+  constructor(private router: Router,
+              private service: HttpServiceService) { }
 
   ngOnInit(): void {
+    this.getProjects()
   }
 
   projectDetail(index: number){
-    // this.project_data.emit({
-    //   image: this.projects[index].image,
-    //   owner: this.projects[index].owner,
-    //   project_name: this.projects[index].project_name,
-    //   description: this.projects[index].description,
-    //   repo_link: this.projects[index].repo_link,
-    //   technologies: this.projects[index].owner,
-    //   category: this.projects[index].category,
-    // })
     this.router.navigate(['/projects', index], {queryParams: {
       project: this.projects[index].project_name,
       owner: this.projects[index].owner,
@@ -73,5 +67,11 @@ export class ProjectsComponent implements OnInit {
       image: this.projects[index].image,
 
     }})
+  }
+
+  getProjects(){
+    this.service.getProjects().subscribe(data => {
+     console.table(data)
+    })
   }
 }

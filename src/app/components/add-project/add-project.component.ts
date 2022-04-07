@@ -23,7 +23,9 @@ description:string = ''
   onSubmit(){
     console.log(this.addproject.value.name, this.addproject.value.member, this.addproject.value.link, this.addproject.value.file)
     this.addproject.reset()
-  }
+
+    }
+  
 
 
 }

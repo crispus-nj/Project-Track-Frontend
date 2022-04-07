@@ -12,9 +12,6 @@ body{
     padding: 20px;
 }
 
-.navbar{
-    background-color: rgb(3, 3, 43);
-}
 
 .d-grid{
     padding-bottom: 15px;
@@ -47,6 +44,7 @@ body{
     background-color: white;
     margin-bottom: 20px;
 }
-.ng-model .ng-touch{
-    color: red;
+
+input.ng-invalid.ng-touched{
+    border: 2px solid red
 }

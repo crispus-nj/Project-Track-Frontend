@@ -11,6 +11,8 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { AboutComponent } from './components/about/about.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { AboutComponent } from './components/about/about.component';
     ProfileComponent,
     EditProfileComponent,
     AddProjectComponent,
+    RegisterComponent,
+    LoginComponent,
     SingleProjectComponent,
   ],
   imports: [

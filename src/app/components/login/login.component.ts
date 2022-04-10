@@ -1,5 +1,4 @@
 import { Component,ViewChild, OnInit } from '@angular/core';
-import { Login } from 'src/app/login';
 import { NgForm } from '@angular/forms';
 
 @Component({
@@ -9,7 +8,7 @@ import { NgForm } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 @ViewChild('loginForm') signin : NgForm;
-loginModel = new Login('trevin@gmail.com', 'password')
+// loginModel = new Login('trevin@gmail.com', 'password')
 
   constructor() { }
 

@@ -1,0 +1,37 @@
+<section class="first">
+    <div class="frontimg">
+        <img src="../../../assets/auth-images/editprofile.jpg" alt="front img" height="600px" width="650px">
+    </div>
+<div class="bookers">
+    <h3 id="reg">Edit Your Profile</h3>
+    <form  #loginForm="ngForm" novalidate>
+<div class="avar">
+<img src="https://cdn.pixabay.com/photo/2021/12/21/08/29/owl-6884773_960_720.jpg" class="avatar"
+    alt="avatar">
+</div>
+    <div class='insameline'>
+        <input type="text" placeholder="Firstname" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+        class="form-control"   name="username" ngModel>
+        <small class="text-danger" [class.d-none] =" name.valid || name.untouched">Firstname is required</small>
+        <input type="text" placeholder="Lastname" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+        class="form-control"   name="username" ngModel>
+        <small class="text-danger" [class.d-none] =" name.valid || name.untouched">Lastname is required</small>
+        <input type="text" placeholder="Username" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+        class="form-control"   name="username" ngModel>
+        <small class="text-danger" [class.d-none] =" name.valid || name.untouched">Username is required</small>
+</div>
+<div class='insameline-1'>
+    <input type="text" placeholder="Bio" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+    class="form-control"   name="username" ngModel>
+    <small class="text-danger" [class.d-none] =" name.valid || name.untouched">Bio is required</small>
+    <input type="text" placeholder="Phone Number" required #name="ngModel" [class.is-invalid]="name.invalid && name.touched"
+    class="form-control"   name="username" ngModel>
+    <small class="text-danger" [class.d-none] =" name.valid || name.untouched">Phone Number is required</small>
+    <div class="upload">
+        <input type="file" class="form-control" id="customFile" />
+        </div>
+</div>
+<a href="#"><button type="button">Update</button></a>
+</form>
+</div>
+</section>

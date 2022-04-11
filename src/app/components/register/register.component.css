@@ -1,12 +1,9 @@
-
 * {
     box-sizing: border-box;
 }
-
 body {
     font-family: "Open Sans", sans-serif;
 }
-
 .bookers {
   height: 20pc;
   width: 23pc;
@@ -22,11 +19,11 @@ body {
   margin: 8px 0;
   box-sizing: border-box;
   border-radius: 4px;
-  box-shadow: #ff4e00;
+  box-shadow: #FF4E00;
 }
 .bookers button {
   display: block;
-  background-color: #f9573f;
+  background-color: #F9573F;
   border: none;
   padding: 15px 32px;
   text-align: center;
@@ -34,7 +31,7 @@ body {
   display: inline-block;
   font-size: 16px;
   border-radius: 12px;
-  box-shadow: #c0392b;
+  box-shadow: #C0392B;
   color: #fff;
   text-transform: uppercase;
   font-weight:bold;
@@ -42,27 +39,20 @@ body {
 .bookers label {
   color: white;
 }
-
-
-
 #header{
     color: #0F1E3A;
     font-weight: 900;
     border: 30px;
     margin-left: 100px;
 }
-
 #reg{
     color: #0F1E3A;
     font-weight: 900;
     margin-left: 100px;
 }
-
 .already{
   color: blue;
   margin: 1pc;
   font-weight: 900;
   text-decoration: none;
 }
-
-

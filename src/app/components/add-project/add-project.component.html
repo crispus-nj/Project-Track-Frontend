@@ -1,1 +1,14 @@
-<p>add-project works!</p>
+<div class="container">
+  <h4 class="d-flex justify-content-center">Add Project</h4>
+
+  <form (ngSubmit)="onSubmit()" #form="ngForm">
+          <input type="text" name="text" class="form-control" id="text" placeholder="Project Name" ngModel required>
+          <textarea class="form-control" name="textarea" id="Textarea" rows="3" placeholder="Project Description" type="text"  required [(ngModel)]="description"></textarea>
+          <p>{{description}}</p>
+          <input type="text" class="form-control" name="members" id="members" placeholder="Project Members" ngModel required>
+          <input type="text" class="form-control" name="link" id="link" placeholder="Project Link" ngModel required>
+          <input class="form-control" name="file" type="file" id="formFile" ngModel required>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" type="Submit" [disabled]="form.invalid">Add Project</button>
+        </div>
+  </form>

@@ -1,0 +1,98 @@
+
+  .sidebar{
+    background-color:#E1E1E1;
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    top: 55px;
+    left: 0;
+    overflow-x: hidden;
+    padding: 3rem 1.3rem;
+  }
+
+  button{
+    display: block;
+    padding: 1.3rem 4rem;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    left: 10px;
+  }
+   
+  button:hover {
+    background-color: #F9573F;
+    box-shadow: 0px 15px 20px rgba(249, 87, 63, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+   
+  button:active {
+    transform: translateY(-1px);
+  }
+
+
+  .buttn{
+    position: relative;
+    align-items: center;
+    left: 32rem;
+    height: 100%;
+  } 
+
+  /* .btns{
+    position: relative;
+    bottom: -2%;
+    justify-content: center;
+    
+  } */
+
+  .img{
+    position: relative;
+    left: 2em;
+    
+  }
+
+  .img1{
+    position: relative;
+    right: 3em;
+  }
+
+  .track{
+    position: relative;
+    left: 22em;
+  }
+
+  .track1{
+    position: relative;
+    left: 18em;
+  }
+
+  .choose{
+    position: relative;
+    top: 30px;
+    left: 10px;
+    margin-bottom: 15rem;
+    bottom: 30rem;
+  }
+  
+  ul li{
+    list-style-type: none;
+    margin-top: 1rem;
+  }
+
+  .image{
+    overflow: hidden;
+  }
+
+  
+

@@ -17,6 +17,7 @@ export class LandingComponent implements OnInit {
   }
   projects() {
     this.route.navigate(['/projects'])
+  
 
   }
 

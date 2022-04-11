@@ -3,35 +3,36 @@
   <div class="container-fluid image">
       <div class="row">
         <!-- <div class="column sidebar"> -->
-          <div class="col-6 sidebar">
+          <div class="sidebar">
             <ul>
-              <li><button class="btn-light btn-lg"  type="submit">About</button></li>
+              <li><button class="btn-light btn-lg" type="submit">About</button></li>
               <li><button class="btn-light btn-lg" type="submit">Profile</button></li>
               <li><button class="btn-light btn-lg" (click)="project()" type="submit">Add Project</button></li>
               <li><button class="btn-light btn-lg" type="submit">Contact Us</button></li>
             </ul>    
           </div>
         <!-- </div> -->
-          <div class="col-6 img">
+          <div class="main">
+            <div class="col-6 img">
               <img src="../../../assets/images/androidremovebg.png" class="rounded float-end" 
-              alt="..." width="300px" height="350px">      
-          </div>
+              alt="..." width="300px" height="350px"> 
+              <div class="col-6 track">
+                <button type="button" (click)="projects()" class="btn btn-link" 
+                style="background-color: #101F3C; color: aliceblue; text-decoration: none">Android Development</button>     
+              </div>     
+            </div>
 
-          <div class="col-6 img1">
+            <div class="col-6 img1">
               <img src="../../../assets/images/web.png" class="rounded float-end" 
               alt="..." width="300px" height="350px"> 
-          </div>
-          <br>
-          <br>
-
-          <div class="col-6 track">
-            <button type="button" (click)="projects()" class="btn btn-link" 
-            style="background-color: #101F3C; color: aliceblue; text-decoration: none">Android Development</button>     
-          </div>
-          <div class="col-6 track1">
-            <button type="button" class="btn btn-link" 
-            style="background-color: #101F3C; color: aliceblue; text-decoration: none">Web Development</button>
-          </div>
+              <div class="col-6 track1">
+                <button type="button" class="btn btn-link" 
+                style="background-color: #101F3C; color: aliceblue; text-decoration: none">Web Development</button>
+              </div>
+            </div>
+            <br>
+            <br>
+          </div>    
 
       <div class="row choose">
         <div class="column">

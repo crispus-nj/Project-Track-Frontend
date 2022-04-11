@@ -1,6 +1,9 @@
 export interface Profile{
-   userId:number,
-   id?:number,
-   title: string,
-   body: string
+   firstName:string,
+   lastName:string,
+   userName:string,
+   bio:string,
+   email:string,
+   phoneNumber:number,
+   avatar:string
 }

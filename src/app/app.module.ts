@@ -16,6 +16,7 @@ import { SingleProjectComponent } from './components/single-project/single-proje
 import { AboutComponent } from './components/about/about.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProfileService } from './services/profile.service';
 
 
 @NgModule({
@@ -39,7 +40,7 @@ import { LoginComponent } from './components/login/login.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

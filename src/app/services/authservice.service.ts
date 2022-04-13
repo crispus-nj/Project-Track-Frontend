@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class AuthserviceService {
-  baseUrl = 'http://127.0.0.1:8000';
+  baseUrl = 'https://project-track-api.herokuapp.com/';
 
   constructor(private http: HttpClient) {}
 

@@ -9,8 +9,10 @@ import { Router } from '@angular/router';
 export class LandingComponent implements OnInit {
 
   constructor( private route: Router) { }
+ 
 
   ngOnInit(): void {
+    // console.log(this.engineer)
   }
   project() {
     this.route.navigate(['/add-project'])
@@ -18,7 +20,6 @@ export class LandingComponent implements OnInit {
   projects() {
     this.route.navigate(['/projects'])
   
-
   }
 
 }

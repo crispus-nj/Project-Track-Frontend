@@ -16,10 +16,7 @@ export class EditProfileComponent implements OnInit {
   constructor(private profileService: ProfileService) { }
 
   ngOnInit(): void {
-    this.profileService.getProfile(1).subscribe((data) =>{ 
-      this.profile= Object.values(data)
-      console.log(this.profile)
-    })
+    this.profileService.getProfile()
+    // console.log(this.profileService.getProfile())
   }
-
 }

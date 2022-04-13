@@ -8,14 +8,25 @@ import { Profile } from '../components/profile/profile.model';
 })
 export class ProfileService {
 
+  token= window.localStorage.getItem('userToken')
+  httpOptions:any
   profileUrl= "http://127.0.0.1:8000/api/users/me/"
-
-  constructor(private http: HttpClient) { }
+  
+  constructor(private http: HttpClient) { 
+    this.httpOptions= new HttpHeaders({'content-type':'application/json'})
+  }
     getAll(): Observable<Profile[]> {
       return this.http.get<Profile[]>(this.profileUrl);
     }
-    getProfile(id: number){
-      return this.http.get(`${this.profileUrl}${id}`);
+    getProfile(){
+      this.http.get(`${this.profileUrl}`,this.httpOptions).subscribe((data) =>{
+        this.httpOptions= new HttpHeaders
+        ({
+          'content-type':'application/json',
+          'Authorization':'Token'+this.token})
+          console.log(data)
+      });
+      
     }
     updateProfile(id: any, data: any){
       return this.http.put(`${this.profileUrl}/${id}`, data);

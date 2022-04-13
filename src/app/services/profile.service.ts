@@ -8,7 +8,7 @@ import { Profile } from '../components/profile/profile.model';
 })
 export class ProfileService {
 
-  profileUrl= "http://127.0.0.1:8000/api/users/create/"
+  profileUrl= "http://127.0.0.1:8000/api/users/me/"
 
   constructor(private http: HttpClient) { }
     getAll(): Observable<Profile[]> {

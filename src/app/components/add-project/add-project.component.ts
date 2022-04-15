@@ -4,6 +4,7 @@ import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Stack } from './stack.model';
 
+
 @Component({
   selector: 'app-add-project',
   templateUrl: './add-project.component.html',
@@ -22,7 +23,9 @@ description:string = ''
     ) { }
 
 
+
   ngOnInit(): void {
+    this.getStacks()
   }
 
   onSubmit(){
@@ -32,12 +35,12 @@ description:string = ''
    const github_link = this.addproject.value.github_link
    const track_id = this.addproject.value.track.id
    const technologies = this.addproject.value.technologies
-    // console.log("jina",name, "Description",description, "picha",image, "link",github_link, "tracks",track, "tech",technologies)
     this.httpService.postProjects(name, description, image, track_id, technologies, github_link).subscribe(res=> {
       this.route.navigate(['/'])
     })
     this.addproject.reset()
   }
+
 
   getStacks(){
     this.httpService.getStack().subscribe(data => {
@@ -46,6 +49,7 @@ description:string = ''
       console.log(this.stack)
     })
   }
+
 
 
 }

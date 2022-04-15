@@ -1,1 +1,49 @@
-<p>single-project works!</p>
+<div class="container-fluid mt-5">
+    <div class="row single" style="max-width: 1000px;margin:auto">
+        <div class="col-md-4 mb-5">
+            <div class="img-container">
+                <img src="{{project.image}}"
+                    alt="product" class="product-img">
+            </div>
+        </div>
+        <div class="col-md-5 ">
+            <div class="members">
+                <div class="members-info d-flex justify-between align-items-center">
+                    <h4 class="projects">Project Members</h4>
+                    <p style="text-align: right;"><button class="button">Add Member</button></p>
+                </div>
+                <ul class="list-group">
+                    <!-- <li class="list-group-item"><a href="">Trevin Livele</a></li> -->
+                    <li class="list-group-item"><a href="">Fred Papa</a></li>
+                    <li class="list-group-item"><a href="">Mwikali Kyalo</a></li>
+                    <li class="list-group-item"><a href="">Engineer</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-md-8" style="max-width: 700px;margin:auto">
+            <h4 class="projects text-center">About Project</h4>
+            <hr>
+            <ul>
+                <li><span class="info">Project Name:</span> <span class="details"> {{project.name}}</span></li>
+                <li><span class="info">Owner:</span> <span class="details"> {{project.owner}}</span></li>
+                <li><span class="info">Track:</span> <span class="details"> {{project.track}}</span></li>
+                <li><span class="info">View Repo:</span> <span class="details"> {{project.github_link}}</span></li>
+                <li><span class="info">Project Description: </span> <span class="details"> {{project.description}}</span></li>
+
+                <li><span class="info">Technologies: </span> <span class="technology mt-2"> {{project.technologies}}</span> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-md-8" style="max-width: 700px;margin:auto">
+            <p class="text-muted">no comments</p>
+            <form (ngSubmit)="sendComment()" #form="ngForm">
+                <textarea name="comment" id="comment" class="form-control" placeholder="Leave a Comment..." cols="30" rows="3" ngModel required></textarea>
+                <button type="submit" [disabled]="form.invalid" class="btn btn-success mt-2">Send</button>
+            </form>
+        </div>
+    </div>
+</div>

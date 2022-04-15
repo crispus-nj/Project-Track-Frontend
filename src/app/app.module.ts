@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { HttpClientModule } from "@angular/common/http"
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +16,9 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { ButtonComponent } from './components/button/button.component';
+import { HttpServiceService } from './services/http-service.service';
+import { ProjectsService } from './services/projects.service';
+
 
 @NgModule({
   declarations: [
@@ -32,9 +37,10 @@ import { ButtonComponent } from './components/button/button.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [HttpServiceService, ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

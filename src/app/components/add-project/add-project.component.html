@@ -5,7 +5,13 @@
           <input type="text" name="text" class="form-control" id="text" placeholder="Project Name" ngModel required>
           <textarea class="form-control" name="textarea" id="Textarea" rows="3" placeholder="Project Description" type="text"  required [(ngModel)]="description"></textarea>
           <p>{{description}}</p>
-          <input type="text" class="form-control" name="members" id="members" placeholder="Project Members" ngModel required>
+          <div class="radio"  *ngFor="let track of stack">
+            <label for="stacks">
+                <input type="radio" name="track" ngModel [value]="track" placeholder="Select stack">
+                {{track.name}}
+            </label>
+
+        </div>
           <input type="text" class="form-control" name="link" id="link" placeholder="Project Link" ngModel required>
           <input class="form-control" name="file" type="file" id="formFile" ngModel required>
           <div class="d-grid gap-2 col-6 mx-auto">

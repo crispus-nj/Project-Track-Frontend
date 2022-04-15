@@ -15,6 +15,7 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { HttpServiceService } from './services/http-service.service';
+import { ProjectsService } from './services/projects.service';
 
 
 
@@ -37,7 +38,7 @@ import { HttpServiceService } from './services/http-service.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [HttpServiceService],
+  providers: [HttpServiceService, ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

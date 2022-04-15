@@ -1,1 +1,39 @@
-<p>add-project works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-5">
+            <form (ngSubmit)="onSubmit()" #form="ngForm">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-control mb-3" placeholder="Project Name" ngModel required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="description" class="form-control mb-3" placeholder="project Description" ngModel required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="technologies" class="form-control mb-3" placeholder="Technologies Used" ngModel required>
+                </div>
+
+                <div class="form-group">
+                    <input type="url" name="github_link" id="" class="form-control mb-3" placeholder="Github Repo Link..." required ngModel>
+                </div>
+               
+                <div class="form-group">
+                    <input type="file" name="image" class="form-control mb-3" placeholder="Project Name" ngModel required>
+                </div>
+                
+                <label for="">Select Stack</label>
+
+                <div class="radio"  *ngFor="let track of stack">
+                    <label for="stacks">
+                        <input type="radio" name="track" ngModel [value]="track" placeholder="Select stack">
+                        {{track.name}}
+                    </label>
+
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

@@ -16,14 +16,14 @@ export class SingleProjectComponent implements OnInit {
   ngOnInit(): void {
     this.route.queryParams.subscribe(res=> {
       this.project = {
-        category: res['category'],
+        track: res['track'],
         owner: res['owner'],
-        project_name: res['category'],
+        name: res['name'],
         image: res['image'],
-        repo_link: res['repo_link'],
+        github_link: res['github_link'],
         description: res['description'],
         technologies: res['technologies'],
-      }
+      }      
     })
   }
   sendComment(){

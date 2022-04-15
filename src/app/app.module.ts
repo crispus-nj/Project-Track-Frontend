@@ -14,7 +14,6 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
-import { HttpServiceService } from './services/http-service.service';
 import { ProjectsService } from './services/projects.service';
 
 
@@ -38,7 +37,7 @@ import { ProjectsService } from './services/projects.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [HttpServiceService, ProjectsService],
+  providers: [ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

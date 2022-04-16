@@ -14,12 +14,13 @@ export class LandingComponent implements OnInit {
   ngOnInit(): void {
     this.httpService.currently_logged_user()
   }
+ 
   project() {
     this.route.navigate(['/add-project'])
   }
   projects() {
     this.route.navigate(['/projects'])
-
+  
   }
 
 }

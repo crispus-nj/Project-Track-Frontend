@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { Observable, of } from 'rxjs';
+import { ProfileService } from 'src/app/services/profile.service';
+import { Profile } from './profile.model';
 
 @Component({
   selector: 'app-profile',
@@ -35,14 +38,19 @@ export class ProfileComponent implements OnInit {
     'Other'
   ]*/
 
+  profile$: Observable<Profile[]>
+
   constructor(
    // private fb : FormBuilder,
     //private acc: AccountService, //Methods updating the user profile
     //private toastr: ToastrService, //notifications to the user
-    private route: Router
+    private route: Router,
+    private profileService: ProfileService
   ) { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // this.profile$ = this.profileService.getProfile()
+  }
     /*this.userid = new FormControl(this.profileDetails.userid, [Validators.required]);
     this.email = new FormControl(this.ProfileDetail.email, [Validators.required, Validators.email]);
     this.username = new FormControl(this.ProfileDetails.username, [Validators.required, Validators.maxLength(20),Validators.maxLength(10)]);
@@ -69,8 +77,12 @@ export class ProfileComponent implements OnInit {
     })
 
   }*/
-
+  
   profile() {
     this.route.navigate(['edit-profile'])
   }
 }
+function value(value: any, arg1: {}[]): Observable<Profile[]> {
+  throw new Error('Function not implemented.');
+}
+

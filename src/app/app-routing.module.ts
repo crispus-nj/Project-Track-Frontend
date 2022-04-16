@@ -9,17 +9,22 @@ import { SingleProjectComponent } from './components/single-project/single-proje
 import { LandingComponent } from './components/landing/landing.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { AboutComponent } from './components/about/about.component';
+import { AuthguardGuard } from './authguard.guard';
+
+
+
 
 const routes: Routes = [
   {path: '', component: LandingComponent},
   {path: "about", component: AboutComponent},
   {path: "projects", component: ProjectsComponent},
   {path: "add-project", component: AddProjectComponent},
-  {path: "profile", component: ProfileComponent},
+  {path: "profile", component: ProfileComponent, canActivate: [AuthguardGuard]},
   {path: "edit-profile", component: EditProfileComponent},
   {path: "projects/:id", component: SingleProjectComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
+
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

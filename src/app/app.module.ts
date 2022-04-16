@@ -15,8 +15,8 @@ import { SingleProjectComponent } from './components/single-project/single-proje
 import { AboutComponent } from './components/about/about.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
-
-
+import { AuthguardGuard } from './authguard.guard';
+import { AuthserviceService } from './services/authservice.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +38,7 @@ import { LoginComponent } from './components/login/login.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [AuthserviceService, AuthguardGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

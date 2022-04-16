@@ -30,7 +30,7 @@ export class AuthserviceService {
       last_name,
     });
   }
-  loggedin(){
-    return !!localStorage.getItem('token');
+  loggedIn(){
+    return !!localStorage.getItem('userToken');
   }
 }

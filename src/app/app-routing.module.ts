@@ -15,7 +15,7 @@ import { AuthguardGuard } from './authguard.guard';
 
 
 const routes: Routes = [
-  {path: '', component: LandingComponent},
+  {path: 'landing', component: LandingComponent},
   {path: "about", component: AboutComponent},
   {path: "projects", component: ProjectsComponent},
   {path: "add-project", component: AddProjectComponent},
@@ -23,7 +23,7 @@ const routes: Routes = [
   {path: "edit-profile", component: EditProfileComponent},
   {path: "projects/:id", component: SingleProjectComponent},
   {path: 'register', component: RegisterComponent},
-  {path: 'login', component: LoginComponent},
+  {path: '', component: LoginComponent},
 
 ]
 @NgModule({

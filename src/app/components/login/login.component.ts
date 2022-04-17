@@ -33,7 +33,7 @@ export class LoginComponent implements OnInit {
         // this.token = this.token.token;
         // token = token.token;
         localStorage.setItem('userToken',this.token.token);
-        this.router.navigateByUrl("/");
+        this.router.navigateByUrl("/landing");
       },
       (error) => {
         // alert(error);

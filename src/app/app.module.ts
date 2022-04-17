@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule } from "@angular/common/http"
+import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http"
 import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { ProjectsService } from './services/projects.service';
+import { AuthInterceptor } from './services/auth.interceptor';
 
 
 
@@ -37,7 +38,11 @@ import { ProjectsService } from './services/projects.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ProjectsService],
+  providers: [ProjectsService, {
+    provide: HTTP_INTERCEPTORS,
+    useClass:AuthInterceptor,
+    multi:true
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

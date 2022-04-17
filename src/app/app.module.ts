@@ -16,13 +16,10 @@ import { SingleProjectComponent } from './components/single-project/single-proje
 import { AboutComponent } from './components/about/about.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
-<<<<<<< HEAD
 import { ProfileService } from './services/profile.service';
-
-
-=======
 import { AuthguardGuard } from './authguard.guard';
->>>>>>> authdev
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,11 +42,7 @@ import { AuthguardGuard } from './authguard.guard';
     HttpClientModule
 
   ],
-<<<<<<< HEAD
-  providers: [ProfileService],
-=======
-  providers: [AuthguardGuard],
->>>>>>> authdev
+  providers: [AuthguardGuard,ProfileService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -19,6 +19,7 @@ import { AboutComponent } from './components/about/about.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileService } from './services/profile.service';
+import { AuthguardGuard } from './authguard.guard';
 
 
 
@@ -43,11 +44,12 @@ import { ProfileService } from './services/profile.service';
     FormsModule,
     HttpClientModule
   ],
-  providers: [ProfileService, ProjectsService, {
+  providers: [ProfileService, ProjectsService,AuthguardGuard, {
     provide: HTTP_INTERCEPTORS,
     useClass:AuthInterceptor,
     multi:true
   }],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

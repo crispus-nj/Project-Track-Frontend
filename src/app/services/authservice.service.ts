@@ -43,12 +43,15 @@ export class AuthserviceService {
         'Authorization': `Token ${this.token}`,
       
       }),
-      // withCredentials:true
     }
     ).subscribe((res:any) => {
       this.user  =  res
       console.log(this.user.username)
     })
 
+  }
+
+  loggedIn(){
+    return !!localStorage.getItem('userToken');
   }
 }

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    overflow: hidden;
 }
 body {
     font-family: "Open Sans", sans-serif;

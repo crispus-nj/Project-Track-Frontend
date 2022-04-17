@@ -13,7 +13,7 @@ canActivate(): boolean {
    if (this._authserviceService.loggedIn()) {
      return true
    }else{
-     this._router.navigate(['/login'])
+     this._router.navigate(['/'])
      return false
    }
  }

@@ -15,13 +15,13 @@ import { AuthguardGuard } from './authguard.guard';
 
 
 const routes: Routes = [
-  {path: 'landing', component: LandingComponent},
-  {path: "about", component: AboutComponent},
-  {path: "projects", component: ProjectsComponent},
-  {path: "add-project", component: AddProjectComponent},
+  {path: 'landing', component: LandingComponent, canActivate: [AuthguardGuard]},
+  {path: "about", component: AboutComponent, canActivate: [AuthguardGuard]},
+  {path: "projects", component: ProjectsComponent, canActivate: [AuthguardGuard]},
+  {path: "add-project", component: AddProjectComponent, canActivate: [AuthguardGuard]},
   {path: "profile", component: ProfileComponent, canActivate: [AuthguardGuard]},
-  {path: "edit-profile", component: EditProfileComponent},
-  {path: "projects/:id", component: SingleProjectComponent},
+  {path: "edit-profile", component: EditProfileComponent, canActivate: [AuthguardGuard]},
+  {path: "projects/:id", component: SingleProjectComponent, canActivate: [AuthguardGuard]},
   {path: 'register', component: RegisterComponent},
   {path: '', component: LoginComponent},
 

@@ -2,6 +2,7 @@ import { OpaqueValue } from '@angular/compiler/src/compiler_facade_interface';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
+
 @Component({
   selector: 'app-add-project',
   templateUrl: './add-project.component.html',

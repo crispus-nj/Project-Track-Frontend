@@ -20,7 +20,9 @@ const routes: Routes = [
   {path: "projects/:id", component: SingleProjectComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
+  {path: "add", component: AddProjectComponent},
 ]
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

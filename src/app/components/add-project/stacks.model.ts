@@ -1,5 +1,5 @@
 export interface Stack {
     id?:number;
-    name: string;
+    name: string
     image?:string
 }

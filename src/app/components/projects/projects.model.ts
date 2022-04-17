@@ -1,10 +1,12 @@
+import { Stack } from "../add-project/stacks.model";
+
 export interface Project {
     id?:number,
     owner: string,
-    project_name: string,
-    category: string,
+    name: string,
+    track: Stack,
     description: string,
-    repo_link: string,
+    github_link: string,
     technologies: string,
     image: string
 }

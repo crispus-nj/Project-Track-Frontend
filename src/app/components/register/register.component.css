@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -57,3 +57,13 @@ body {
   font-weight: 900;
   text-decoration: none;
 }
+
+ @media (max-width: 468px) {
+  
+  .row  img {
+    display: none;
+  }
+
+}
+
+

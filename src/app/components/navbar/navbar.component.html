@@ -1,16 +1,20 @@
 
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #101F3C; font-family: 'Quicksand', sans-serif;">
+  <div class="container-fluid navy">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light " style="background-color: #101F3C; font-family: 'Quicksand', sans-serif;">
       <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/" style="color: #F9573F; font-weight: 900;">Project Tracker Dashboard</a>
+        <a class="navbar-brand" routerLink="/landing" style="color: #F9573F; font-weight: 900;">Project Tracker Dashboard</a>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active bar" aria-current="page" routerLink="/" style="color: #F9573F; font-weight: 600;"> 
+            <a class="nav-link active bar" aria-current="page" routerLink="/about" style="color: #F9573F; font-weight: 600;"> 
               Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active bar" routerLink="profile" style="color: #F9573F; font-weight: 600;">
+            <a class="nav-link active bar" routerLink="/profile" style="color: #F9573F; font-weight: 600;">
               Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active bar" routerLink="/add-project" style="color: #F9573F; font-weight: 600;">
+              Add Project</a>
           </li>
           <li class="nav-item active bar">
             <a class="nav-link active bar" style="cursor:pointer;" (click)="logoutUser()" style="color: #F9573F; font-weight: 600;"> 
@@ -20,4 +24,3 @@
       </div>
     </nav>
   </div>
-

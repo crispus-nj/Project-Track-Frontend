@@ -7,6 +7,9 @@
   border-radius: 12px;
   /* background-color: #dfac7c; */
 }
+/* .card{
+  display: none;
+} */
 .img-container {
   position: relative;
   overflow: hidden;
@@ -67,4 +70,17 @@ ul li {
 }
 
 
+.btn{
+  justify-content: space-between;
+  margin: 20px;
+}
 
+.btn:hover{
+  background-color: #F9573F;
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  padding-right: 50px;
+}

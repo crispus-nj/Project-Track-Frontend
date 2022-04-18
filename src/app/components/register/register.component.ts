@@ -1,7 +1,9 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+
 import { Router } from '@angular/router';
 import { AuthserviceService } from 'src/app/services/authservice.service';
+import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
   selector: 'app-register',
@@ -10,11 +12,15 @@ import { AuthserviceService } from 'src/app/services/authservice.service';
   providers: [AuthserviceService],
 })
 export class RegisterComponent implements OnInit {
+
   @ViewChild('registerForm') signup: NgForm;
+  constructor(private AuthService: AuthserviceService,private router: Router, private httpService: ProjectsService) {}
 
-  constructor(private AuthService: AuthserviceService,private router: Router) {}
-
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.httpService.getStack().subscribe(data => {
+      console.log(data)
+    })
+  }
 
   onSubmit() {
     // console.log(
@@ -30,6 +36,7 @@ export class RegisterComponent implements OnInit {
     this.AuthService.registerUser(email,password,username,first_name,last_name).subscribe(res => {
       console.log(res);
       this.router.navigateByUrl("/login");
+
 
     },error => {
       console.log(error);

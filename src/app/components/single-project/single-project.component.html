@@ -1,4 +1,5 @@
-<div class="container-fluid mt-5">
+<app-navbar></app-navbar>
+<div class="container-fluid mt-5" style="margin-top: 8rem">
     <div class="row single" style="max-width: 1000px;margin:auto">
         <div class="col-md-4 mb-5">
             <div class="img-container">
@@ -10,7 +11,30 @@
             <div class="members">
                 <div class="members-info d-flex justify-between align-items-center">
                     <h4 class="projects">Project Members</h4>
-                    <p style="text-align: right;"><button class="button">Add Member</button></p>
+                    <p style="text-align: right;"><button class="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add Member</button></p>
+
+
+<!-- Button trigger modal -->
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="staticBackdropLabel">Add Members</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
                 </div>
                 <ul class="list-group">
                     <!-- <li class="list-group-item"><a href="">Trevin Livele</a></li> -->
@@ -27,10 +51,10 @@
             <h4 class="projects text-center">About Project</h4>
             <hr>
             <ul>
-                <li><span class="info">Project Name:</span> <span class="details"> {{project.project_name}}</span></li>
-                <li><span class="info">Owner:</span> <span class="details"> {{project.owner}}</span></li>
-                <li><span class="info">Category:</span> <span class="details"> {{project.category}}</span></li>
-                <li><span class="info">View Repo:</span> <span class="details"> {{project.repo_link}}</span></li>
+                <li><span class="info">Project Name:</span> <span class="details"> {{project.name}}</span></li>
+                <!-- <li><span class="info">Owner:</span> <span class="details"> {{project.owner}}</span></li> -->
+                <li><span class="info">Track:</span> <span class="details"> {{project.track}}</span></li>
+                <li><span class="info">View Repo:</span> <span class="details"> {{project.github_link}}</span></li>
                 <li><span class="info">Project Description: </span> <span class="details"> {{project.description}}</span></li>
 
                 <li><span class="info">Technologies: </span> <span class="technology mt-2"> {{project.technologies}}</span> </li>

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http"
 import { FormsModule } from '@angular/forms';
 
@@ -20,6 +21,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileService } from './services/profile.service';
 import { AuthguardGuard } from './authguard.guard';
+import { ProjectPipe } from './project.pipe';
 
 
 
@@ -36,14 +38,16 @@ import { AuthguardGuard } from './authguard.guard';
     LoginComponent,
     SingleProjectComponent,
     AboutComponent,
-    ButtonComponent
+    ButtonComponent,
+    ProjectPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
+
   providers: [ProfileService, ProjectsService,AuthguardGuard, {
     provide: HTTP_INTERCEPTORS,
     useClass:AuthInterceptor,

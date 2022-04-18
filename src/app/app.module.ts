@@ -21,6 +21,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileService } from './services/profile.service';
 import { AuthguardGuard } from './authguard.guard';
+import { FooterComponent } from './components/footer/footer.component';
 // import { ProjectPipe } from './project.pipe';
 
 
@@ -39,6 +40,7 @@ import { AuthguardGuard } from './authguard.guard';
     SingleProjectComponent,
     AboutComponent,
     ButtonComponent,
+    FooterComponent,
     // ProjectPipe
   ],
   imports: [

@@ -1,43 +1,43 @@
 <app-navbar></app-navbar>
-  <!--side navbar-->
-  <div class="container-fluid image">
-      <div class="row">
-        <!-- <div class="column sidebar"> -->
-          <div class="sidebar mt-5">
+<!--side navbar-->
+<div class="container image">
+  <h1>Tracks</h1>
+  <hr>
+  <div class="row">
+    <!-- <div class="column sidebar"> -->
+    <!-- <div class="sidebar mt-5">
             <ul>
              
               <li><button class="btn-light btn-lg" (click)="project()" type="submit">Add Project</button></li>
               <li><button class="btn-light btn-lg" type="submit">Contact Us</button></li>
             </ul>    
-          </div>
-        <!-- </div> -->
-          
-
-          <div class="main mt-5" *ngFor="let track of tracks ; let i = index">
-            <div class="col-6 img">
-              <img src="https://res.cloudinary.com/dlntyyesm/{{track.image}}" class="img-responsiverounded float-end" 
-              alt="..." width="300px" height="350px"> 
-              <div class="col-6 track">
-                <button type="button" (click)="projects(track.id)" class="btn btn-link" 
-                style="background-color: #101F3C; color: aliceblue; text-decoration: none">
-              {{track.name}}
-            </button>     
-              </div>     
-            </div>
-            <br>
-            <br>
-          </div>    
-
-      <div class="row choose">
-        <div class="column">
-          <button class="btn-light btn-lg buttn" type="submit" 
-          style="background-color: #F9573F; color: aliceblue;">
-           Choose Track to View and Contribute to Projects</button>
+          </div> -->
+    <!-- </div> -->
+   
+    <div class="col-md-3 mt-3" *ngFor="let track of tracks ; let i = index" style="margin: auto;">
+      <div class="card shadow mt-3">
+        <div class="img-container">
+          <img src="https://res.cloudinary.com/dlntyyesm/{{track.image}}" class="card-img-top" alt="..."
+            class="product-img">
+        </div>
+        <div class="card-body">
+          <button type="button" (click)="projects(track.id)" class="btn btn-link btn-sm"
+            style="background-color: #F9573F; color: aliceblue; text-decoration: none">
+            {{track.name}}
+          </button>
         </div>
       </div>
     </div>
+
+
+  </div>
 </div>
-    
-    
-
-
+<!-- <div class="container">
+  <div class="row choose">
+    <div class="col-md-12">
+      <button class="btn-light btn-lg buttn" type="submit" style="background-color: #F9573F; color: aliceblue;">
+        Choose Track to View and Contribute to Projects</button>
+    </div>
+  </div>
+</div> -->
+<app-footer></app-footer>

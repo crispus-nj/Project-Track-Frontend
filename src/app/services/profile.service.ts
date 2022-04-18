@@ -11,7 +11,7 @@ export class ProfileService {
   token = window.localStorage.getItem('userToken')
   
   httpOptions:any
-  profileUrl= "http://127.0.0.1:8000/api/users/me/"
+  profileUrl= "https://project-track-api.herokuapp.com/api/users/me/"
   
   constructor(private http: HttpClient) { 
     this.httpOptions= new HttpHeaders({'content-type':'application/json'})

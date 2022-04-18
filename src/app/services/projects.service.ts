@@ -9,19 +9,19 @@ export class ProjectsService {
   constructor(private http: HttpClient) { }
 
   getProjects(data:any) {
-    return this.http.post("http://127.0.0.1:8000/api/projects/getProjects", data)
+    return this.http.post("https://project-track-api.herokuapp.com/api/projects/getProjects", data)
   }
 
   getTracks() {
-    return this.http.get("http://127.0.0.1:8000/api/track/getTracks")
+    return this.http.get("https://project-track-api.herokuapp.com/api/track/getTracks")
   }
 
   getStack() {
-    return this.http.get("http://127.0.0.1:8000/api/track/track-selection/")
+    return this.http.get("https://project-track-api.herokuapp.com/api/track/track-selection/")
   }
 
   postProjects(name: string, description: string, image: string, track_id: number, technologies: string, github_link: string) {
-    return this.http.post("http://127.0.0.1:8000/api/projects/projects/",
+    return this.http.post("https://project-track-api.herokuapp.com/api/projects/projects/",
       {
         name,
         image,

@@ -10,7 +10,7 @@ export class AuthserviceService {
    
   user:User
 
-  baseUrl = 'http://127.0.0.1:8000';
+  baseUrl = 'https://project-track-api.herokuapp.com';
   
   token = window.localStorage.getItem("userToken")
 
@@ -38,7 +38,7 @@ export class AuthserviceService {
     });
   }
   currently_logged_user(){
-    this.http.get("http://127.0.0.1:8000/api/users/user/", {
+    this.http.get("https://project-track-api.herokuapp.com/api/users/user/", {
       headers: new HttpHeaders({
         'content-type': 'application/json',
         'Authorization': `Token ${this.token}`,

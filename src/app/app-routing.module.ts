@@ -11,10 +11,6 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { AboutComponent } from './components/about/about.component';
 import { AuthguardGuard } from './authguard.guard';
 
-
-
-
-
 const routes: Routes = [
 
   {path: 'landing', component: LandingComponent, canActivate: [AuthguardGuard]},

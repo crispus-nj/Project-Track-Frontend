@@ -34,9 +34,7 @@ export class ProfileService {
     deleteProfile(id: any): Observable<any> {
       return this.http.delete(`${this.profileUrl}${id}`);
     }
-    // findByUser(username: any): Observable<Profile[]> {
-    //   return this.http.get<Profile[]>(`${this.profileUrl}?username=${username}`);
-    // }
+    
   }
    
   

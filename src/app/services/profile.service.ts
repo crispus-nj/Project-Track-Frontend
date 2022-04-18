@@ -8,7 +8,8 @@ import { Profile } from '../components/profile/profile.model';
 })
 export class ProfileService {
 
-  token= window.localStorage.getItem('userToken')
+  token = window.localStorage.getItem('userToken')
+  
   httpOptions:any
   profileUrl= "http://127.0.0.1:8000/api/users/me/"
   

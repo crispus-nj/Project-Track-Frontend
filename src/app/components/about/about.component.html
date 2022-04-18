@@ -1,29 +1,24 @@
 <app-navbar></app-navbar>
-<div class="container-fluid">
-  
-
-
-    <div class="bg-text">
-      <h2 style="font-size: 3em; color: #F9573F;">Project Tracker</h2>
-      <p style="font-size: 25px; color: white; font-weight: 600;"> 
-        Project Tracker is a web application that helps students track the applications<br>
-        they have created in their learning process. They also get to invite collaborators to the projects and collaborate.</p>
-    </div>
-  
-
-  <!--footer-->
-  <footer>
-    <div class="footer-content">
-      <h5>Contact Us</h5>
-      <ul class="socials" style="position: relative; right: 15px;">
-        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-twitter-square"></i></a></li>
-        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-      </ul>
-      <div class="footer-bottom">
-        <p style="position: relative; left: 10%;">Copyright &copy;2022 <a href="#" 
-          style="text-decoration: none; color: aliceblue;"> ProjectTracker</a> </p>
-      </div>
-    </div>
-  </footer>
-</div>  
+<div class="container-fluid body">
+  <div class="row">
+    <div class="bg-image"><img src="../../../assets/images/projecttracker.jpg" alt=""
+      width="100%" height="100%" class="img-fluid"></div>
+  </div>
+  <div class="row align-items-center bg-text">
+      <div class="col">
+          <h4>Project Tracker <span><i class="fa-solid fa-computer"></i></span></h4>
+          <div class="about text-center">
+          <p style="font-size: 25px; color: white; font-weight: 600;">
+              Project Tracker is a web application that helps students<br>
+              track the applications they have created <br>
+              in their learning process. They also get to invite <br>
+              collaborators to the projects and collaborate.</p><br>
+          </div>
+          <div class="buttons d-grid gap-2 d-md-block">
+              <a routerLink="/landing" class="button"><button class="btn">
+                  Dashboard </button></a>&nbsp;
+          </div>
+  </div>
+</div>
+</div>
+<app-footer></app-footer> 

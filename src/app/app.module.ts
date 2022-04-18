@@ -21,7 +21,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { ProfileService } from './services/profile.service';
 import { AuthguardGuard } from './authguard.guard';
-import { ProjectPipe } from './project.pipe';
+// import { ProjectPipe } from './project.pipe';
 
 
 
@@ -39,7 +39,7 @@ import { ProjectPipe } from './project.pipe';
     SingleProjectComponent,
     AboutComponent,
     ButtonComponent,
-    ProjectPipe
+    // ProjectPipe
   ],
   imports: [
     BrowserModule,

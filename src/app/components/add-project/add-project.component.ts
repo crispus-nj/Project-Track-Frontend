@@ -24,14 +24,12 @@ description:string = ''
   constructor(private route:Router, private httpService: ProjectsService
     ) { }
 
-
-
-
   ngOnInit(): void {
+    this.getStacks()
   }
 
   onSubmit(){
-    console.log(this.addproject.value.track.name)
+    // console.log(this.addproject.value.track.name)
    const name = this.addproject.value.name
    const description = this.addproject.value.description
    const image = this.addproject.value.image
@@ -39,7 +37,7 @@ description:string = ''
    const track_id = this.addproject.value.track.id
    const technologies = this.addproject.value.technologies
     this.httpService.postProjects(name, description, image, track_id, technologies, github_link).subscribe(res=> {
-      this.route.navigate(['/'])
+      this.route.navigate(['/projects'])
     })
     // console.log(track_id)
     this.addproject.reset()

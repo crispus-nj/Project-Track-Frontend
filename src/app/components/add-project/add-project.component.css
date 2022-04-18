@@ -48,3 +48,7 @@ body{
 input.ng-invalid.ng-touched{
     border: 2px solid red
 }
+
+h4 {
+    text-transform: uppercase;
+}

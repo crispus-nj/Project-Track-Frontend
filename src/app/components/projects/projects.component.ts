@@ -55,7 +55,8 @@ export class ProjectsComponent implements OnInit {
               private service: ProjectsService) { }
 
   ngOnInit(): void {
-    this.getProjects()
+    let data = {"track":1}
+    this.getProjects(history.state.data)
   }
 
   projectDetail(index: number){
@@ -71,15 +72,10 @@ export class ProjectsComponent implements OnInit {
     }})
   }
 
-  getProjects(){
-    this.service.getProjects().subscribe(data => {
+  getProjects(data:any){
+    this.service.getProjects(data).subscribe(data => {
     //  console.log(data)
      this.projects = Object.values(data)
-
-     for (let data of this.projects){
-        console.log((data['track'].name))
-     }
-
     }, error => {
       this.message = `you are not logged in ${error}`
     })

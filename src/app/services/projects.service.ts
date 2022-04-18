@@ -8,9 +8,14 @@ export class ProjectsService {
   
   constructor(private http: HttpClient) { }
 
-  getProjects() {
-    return this.http.get("http://127.0.0.1:8000/api/projects/projects/")
+  getProjects(data:any) {
+    return this.http.post("http://127.0.0.1:8000/api/projects/getProjects", data)
   }
+
+  getTracks() {
+    return this.http.get("http://127.0.0.1:8000/api/track/getTracks")
+  }
+
   getStack() {
     return this.http.get("http://127.0.0.1:8000/api/track/track-selection/")
   }

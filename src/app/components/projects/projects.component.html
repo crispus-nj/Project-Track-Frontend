@@ -1,4 +1,4 @@
-<app-navbar></app-navbar>
+<!-- <app-navbar></app-navbar>
 <div class="container mt-3">
     <div class="row">
         <div class="col-md-12">
@@ -18,14 +18,14 @@
     <hr>
     </div>
 
+    
     <div class="container">
-        <div class="row">
-            
-            <div class="col-md-3 mt-2 d-flex justify-content-start align-items-start" *ngFor="let project of projects ; let i = index">
-
+        <div class="row" *ngFor="let project of projects ; let i = index">
+            <div class="col-md-3 mt-2 d-flex justify-content-start align-items-start">
+                
                 <div class="card shadow card-items mt-2">
                     <div class="img-container">
-                        <img src="{{project.image}}" class="card-img-top" alt="..." class="product-img">
+                        <img src="https://res.cloudinary.com/dlntyyesm/{{project.image}}" class="card-img-top" alt="..." class="product-img">
                         <button class="bag-btn"  (click)="projectDetail(i)">
                             View Project
                         </button>
@@ -47,4 +47,34 @@
             </div>
         </div>
     
+</div> -->
+
+
+    
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-12">
+            <h3 class="text-center mt-5 projects">{{projects[0].track.name}} Projects</h3>
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div id="button">
+        <button type="button" class="btn btn-outline-primary" onClick="filterProjects('all')">All Projects</button>
+        <button type="button" class="btn btn-outline-secondary" onClick="filterProjects('android')">Android</button>
+        <button type="button" class="btn btn-outline-success" onClick="filterProjects('fullstack')">Fullstack</button>
+
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6" *ngFor="let project of projects ; let i = index">
+            <img src="https://res.cloudinary.com/dlntyyesm/{{project.image}}" class="card-img-top" alt="..." class="product-img">
+
+            <button (click)="projectDetail(i)"> {{project.name}} </button>
+        </div>
+    </div>
 </div>

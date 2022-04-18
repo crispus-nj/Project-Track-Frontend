@@ -10,6 +10,10 @@ import { LandingComponent } from './components/landing/landing.component';
 import { EditProfileComponent } from './components/edit-profile/edit-profile.component';
 import { AboutComponent } from './components/about/about.component';
 
+
+
+
+
 const routes: Routes = [
   {path: '', component: LandingComponent},
   {path: "about", component: AboutComponent},
@@ -21,6 +25,7 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent},
   {path: 'login', component: LoginComponent},
 ]
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

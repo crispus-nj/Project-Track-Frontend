@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { ProjectsService } from 'src/app/services/projects.service';
 
 @Component({
   selector: 'app-register',
@@ -10,9 +11,12 @@ export class RegisterComponent implements OnInit {
 
 @ViewChild('registerForm') signup : NgForm;
 
-  constructor() { }
+  constructor(private httpService: ProjectsService) { }
 
   ngOnInit(): void {
+    this.httpService.getStack().subscribe(data => {
+      console.log(data)
+    })
   }
 
 onSubmit(){

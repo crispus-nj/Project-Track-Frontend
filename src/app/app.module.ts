@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { HttpClientModule } from "@angular/common/http"
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +16,8 @@ import { SingleProjectComponent } from './components/single-project/single-proje
 import { AboutComponent } from './components/about/about.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
+import { ProjectsService } from './services/projects.service';
+import { ProjectPipe } from './project.pipe';
 
 
 @NgModule({
@@ -29,14 +33,16 @@ import { LoginComponent } from './components/login/login.component';
     LoginComponent,
     SingleProjectComponent,
     AboutComponent,
-    ButtonComponent
+    ButtonComponent,
+    ProjectPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -5,11 +14,22 @@
             <hr>
         </div>
     </div>
+</div>
+    <div class="container">
+        <div id="button">
+            <button type="button" class="btn btn-outline-primary" onClick="filterProjects('all')">All Projects</button>
+            <button type="button" class="btn btn-outline-secondary" onClick="filterProjects('android')">Android</button>
+            <button type="button" class="btn btn-outline-success" onClick="filterProjects('fullstack')">Fullstack</button>
+
+        </div>
+       
+    <hr>
     </div>
+
     <div class="container">
         <div class="row">
             
-            <div class="col-md-3 mt-2 d-flex justify-content-start align-items-start" *ngFor="let project of projects; let i = index">
+            <div class="col-md-3 mt-2 d-flex justify-content-start align-items-start" *ngFor="let project of projects ; let i = index">
 
                 <div class="card shadow card-items mt-2">
                     <div class="img-container">
@@ -20,19 +40,23 @@
                     </div>
                     
                     <div class="card-body">
-                        <div class="card">
+                        <div class="card all">
                             <div class="card-header">
-                                <span class="info">Category: </span> <span class="details">{{project.category}}</span>
+                                <span class="info">Category: </span> <span class="details">{{project.track.name}}</span>
                             </div>
                             <ul class="list-group list-group-flush">
-                              <li class="list-group-item"><span class="info">Project Name: </span> <span class="details">{{project.project_name}}</span></li>
+                              <li class="list-group-item"><span class="info">Project Name: </span> <span class="details">{{project.name}}</span></li>
                               <li class="list-group-item"><span class="info">Project Description: </span> <span class="details">{{project.description}}</span></li>
                               <li class="list-group-item"><span class="info">Technologies: </span> <span class="technology mt-2">{{project.technologies}}</span> </li>
                             </ul>
-                          </div>
+                        </div>
                     </div>
                   </div>
             </div>
         </div>
     
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>

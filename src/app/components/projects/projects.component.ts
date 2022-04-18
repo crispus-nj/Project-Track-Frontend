@@ -8,6 +8,8 @@ import { ProjectsService } from 'src/app/services/projects.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
+
+  message= ""
   projects: Project[] = [
     // {
     //   owner: "Crispus Njenga",
@@ -78,6 +80,8 @@ export class ProjectsComponent implements OnInit {
         console.log((data['track'].name))
      }
 
+    }, error => {
+      this.message = `you are not logged in ${error}`
     })
   }
 }

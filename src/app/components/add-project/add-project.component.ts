@@ -6,6 +6,7 @@ import { ProjectsService } from 'src/app/services/projects.service';
 import { Stack } from './stacks.model';
 
 
+
 @Component({
   selector: 'app-add-project',
   templateUrl: './add-project.component.html',
@@ -25,8 +26,8 @@ description:string = ''
 
 
 
+
   ngOnInit(): void {
-    this.getStacks()
   }
 
   onSubmit(){

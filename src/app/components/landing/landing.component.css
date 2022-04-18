@@ -1,14 +1,29 @@
 
   .sidebar{
     background-color:#E1E1E1;
-    height: 100%;
+    flex: 30%;
+    height: 100vh;
     width: 25%;
-    position: fixed;
+    /* position: fixed; */
     z-index: 1;
     top: 55px;
     left: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     padding: 3rem 1.3rem;
+  }
+
+  .row {  
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  
+
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    overflow: hidden;
   }
 
   button{
@@ -41,7 +56,6 @@
     transform: translateY(-1px);
   }
 
-
   .buttn{
     position: relative;
     align-items: center;
@@ -58,31 +72,33 @@
 
   .img{
     position: relative;
-    left: 2em;
-    
-  }
-
-  .img1{
-    position: relative;
-    right: 3em;
+    top: -50px;
+    left: -80px;
   }
 
   .track{
     position: relative;
-    left: 22em;
+    left: 10rem;
+  }
+
+  .img1{
+    float: right;
+    position: relative;
+    top: -30em;
+    overflow: hidden;
   }
 
   .track1{
     position: relative;
-    left: 18em;
+    left: 10rem;
   }
 
   .choose{
     position: relative;
-    top: 30px;
-    left: 10px;
-    margin-bottom: 15rem;
-    bottom: 30rem;
+    top: -28em;
+    left: 5em;
+    overflow-y: hidden;
+    
   }
   
   ul li{
@@ -92,6 +108,7 @@
 
   .image{
     overflow: hidden;
+   
   }
 
   

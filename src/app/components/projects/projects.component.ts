@@ -1,7 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { Project } from './projects.model';
-import { HttpServiceService } from '../../services/http-service.service';
 import { ProjectsService } from 'src/app/services/projects.service';
 @Component({
   selector: 'app-projects',

@@ -2,7 +2,8 @@ import { OpaqueValue } from '@angular/compiler/src/compiler_facade_interface';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Stack } from './stack.model';
+import { ProjectsService } from 'src/app/services/projects.service';
+import { Stack } from './stacks.model';
 
 
 @Component({
@@ -11,9 +12,9 @@ import { Stack } from './stack.model';
   styleUrls: ['./add-project.component.css']
 })
 export class AddProjectComponent implements OnInit { 
-  text!: string;
-  file!: OpaqueValue;
-
+  // text!: string;
+  // file!: OpaqueValue;
+selectedStack = null
 stack: Stack[] = []
 
 description:string = ''
@@ -29,6 +30,7 @@ description:string = ''
   }
 
   onSubmit(){
+    console.log(this.addproject.value.track.name)
    const name = this.addproject.value.name
    const description = this.addproject.value.description
    const image = this.addproject.value.image
@@ -38,6 +40,7 @@ description:string = ''
     this.httpService.postProjects(name, description, image, track_id, technologies, github_link).subscribe(res=> {
       this.route.navigate(['/'])
     })
+    // console.log(track_id)
     this.addproject.reset()
   }
 

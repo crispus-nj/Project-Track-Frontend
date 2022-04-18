@@ -16,8 +16,8 @@ import { EditProfileComponent } from './components/edit-profile/edit-profile.com
 import { AddProjectComponent } from './components/add-project/add-project.component';
 import { SingleProjectComponent } from './components/single-project/single-project.component';
 import { ButtonComponent } from './components/button/button.component';
-import { HttpServiceService } from './services/http-service.service';
 import { ProjectsService } from './services/projects.service';
+import { ProjectPipe } from './project.pipe';
 
 
 @NgModule({
@@ -32,7 +32,8 @@ import { ProjectsService } from './services/projects.service';
     EditProfileComponent,
     AddProjectComponent,
     SingleProjectComponent,
-    ButtonComponent
+    ButtonComponent,
+    ProjectPipe
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,7 @@ import { ProjectsService } from './services/projects.service';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [HttpServiceService, ProjectsService],
+  providers: [ProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
